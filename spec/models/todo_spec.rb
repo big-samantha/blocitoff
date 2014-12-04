@@ -5,14 +5,14 @@ describe 'todo' do
   before :each do
     @todo = Todo.new
   end
-  describe "validations" do
-    it "should not save the todo if the description is blank" do
-      expect(@todo.save).to eq(false)
+  describe "todo validations" do
+    it "should not be valid if the description is blank" do
+      expect(@todo.valid?).to eq(false)
     end
 
-    it "should save the todo if it has a description" do
+    it "should be valid if the description is not blank" do
       @todo.description='foobarbaz'
-      expect(@todo.save).to eq(true)
+      expect(@todo.valid?).to eq(true)
     end
   end
 end
