@@ -11,4 +11,3 @@ feature 'User signs up for an account' do
     expect( page ).to have_content('Signed up successfully!')
   end
 end
-
