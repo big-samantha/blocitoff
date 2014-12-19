@@ -1,0 +1,3 @@
+SENDGRID_PASSWORD: password
+SENDGRID_USERNAME: foo@bar.com
+SECRET_KEY_BASE: `rake secret`

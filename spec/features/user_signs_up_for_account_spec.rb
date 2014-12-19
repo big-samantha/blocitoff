@@ -11,4 +11,5 @@ feature 'User signs up for an account' do
     click_button 'Submit'
     expect( page ).to have_content('A message with a confirmation link has been sent to your email address.')
   end
+
 end
